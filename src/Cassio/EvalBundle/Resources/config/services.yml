@@ -1,0 +1,11 @@
+parameters:
+#    cassio_eval.example.class: Cassio\EvalBundle\Example
+
+services:
+  cassio_eval.form.type.subirsol:
+    class: Cassio\EvalBundle\Form\Type\SubirSol
+    tags:
+        - { name: form.type, alias: subirsol }
+#    cassio_eval.example:
+#        class: %cassio_eval.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

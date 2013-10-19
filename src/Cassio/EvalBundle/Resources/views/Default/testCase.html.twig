@@ -1,0 +1,20 @@
+{% stylesheets 'bundles/cassio/css/estilo.css' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+
+
+<script type="text/javascript">
+function menorDe(e){
+  var numero = {{ limite }};
+  var actual = document.getElementById('test_form_puntaje').value;
+  //document.log(actual);
+  var numero_total = actual + String.fromCharCode(e.charCode);
+
+  if (parseInt(numero_total) > numero)
+    alert("El numero debe ser menor igual a: " + numero);
+}
+</script>
+
+
+{{ form(form) }}
+

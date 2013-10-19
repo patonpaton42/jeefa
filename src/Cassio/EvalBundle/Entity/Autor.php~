@@ -1,0 +1,44 @@
+<?php
+
+namespace Cassio\EvalBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="Autor")
+ */
+class Autor
+{
+   /**
+   * @ORM\Id
+   * @ORM\Column(type="integer")
+   * @ORM\GeneratedValue(strategy="AUTO")
+   */
+    private $id;
+    /**
+   * @ORM\Column(type="string", length=100)
+   */
+    private $nombre;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Problema", mappedBy="autor")
+     */
+    private $problemas;
+
+   
+    public function getId()
+    {
+        return $this->id;
+    }
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+    
+        return $this;
+    }
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+}

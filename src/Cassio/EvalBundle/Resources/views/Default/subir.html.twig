@@ -1,0 +1,20 @@
+{# src/Cassio/EvalBundle/Resources/views/Default/subir.html.twig #}
+
+{% stylesheets 'bundles/cassio/css/*' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+
+<script>
+collection = [
+{% for tag in tags %}
+'{{ tag }}',
+{% endfor %}
+];
+</script>
+
+{% javascripts '@CassioEvalBundle/Resources/public/js/*' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+{{ form(form) }}
+

@@ -1,0 +1,31 @@
+label {
+    background: none repeat scroll 0 0 #F3F3F3;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 24px;
+    margin: 0 10px 0 0;
+    padding: 3px 7px;
+    width: 150px;
+}
+
+.input {
+    background-color: #F3F3F3;
+    border: 1px solid #CCCCCC;
+    height: 16px;
+    padding: 7px;
+    width: 435px;
+}
+
+.select {
+    background-color: #F3F3F3;
+    border: 1px solid #CCCCCC;
+    height: 32px;
+    padding: 4px;
+    width: 451px;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #CCCCCC;
+}

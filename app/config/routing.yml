@@ -1,0 +1,4 @@
+cassio_eval:
+    resource: "@CassioEvalBundle/Resources/config/routing.yml"
+    prefix:   /
+

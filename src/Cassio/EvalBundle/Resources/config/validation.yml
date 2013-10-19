@@ -1,0 +1,24 @@
+#Acme\BlogBundle\Entity\Author:
+Cassio\EvalBundle\Entity\SubirSol:
+    properties:
+        file:
+            - File:
+                maxSize: 2000000
+                mimeTypes: [text/x-c, text/x-c++src]
+                mimeTypesMessage: Por favor subir un archivo valido de codigo fuente.
+
+Cassio\EvalBundle\Entity\Problema:
+    properties:
+        file:
+            - File:
+                maxSize: 2000000
+                mimeTypes: [text/x-c, text/x-c++src]
+                mimeTypesMessage: Por favor subir un archivo valido de codigo fuente.
+
+#Cassio\EvalBundle\Entity\SubirSol:
+#  properties:
+#    file:
+#      - File:
+#        maxSize: 2000000 
+#        mimeTypes: [text/plain]
+#        mimeTypesMessage: Por favor subir un archivo valido de codigo fuente.

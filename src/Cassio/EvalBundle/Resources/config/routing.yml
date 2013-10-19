@@ -1,0 +1,20 @@
+task:
+    path: /task
+    defaults: { _controller: CassioEvalBundle:Default:new }
+
+subir:
+    path: /subir
+    defaults: { _controller: CassioEvalBundle:Default:subir }
+subirTc:
+    path: /subirtc
+    defaults: { _controller: CassioEvalBundle:testCase:tc }
+upload:
+    path: /upload
+    defaults: { _controller: CassioEvalBundle:Default:upload }
+tc:
+    path: /tc
+    defaults: { _controller: CassioEvalBundle:Default:showTC }
+
+subirProblema:
+    path: /subirProblema
+    defaults: { _controller: CassioEvalBundle:SubirProblema:subirProblema }

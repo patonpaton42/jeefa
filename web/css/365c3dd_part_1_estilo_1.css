@@ -1,0 +1,13 @@
+div {
+      margin: .4em 0;
+}
+div label {
+      width: 10%;
+      float: left;
+}
+
+div.cke {
+      width: 40%;
+}
+
+
